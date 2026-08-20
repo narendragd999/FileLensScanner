@@ -16,6 +16,7 @@
         }
         h1, h2 {
             color: #1a1a1a;
+            margin-top: 30px;
         }
         .container {
             background-color: #fff;
@@ -30,43 +31,62 @@
             margin: 20px 0;
             border-radius: 4px;
         }
+        ul {
+            margin-top: 5px;
+        }
+        a {
+            color: #1890ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> August 16, 2026</p>
+        <p><strong>Effective Date:</strong> August 20, 2026</p>
 
-        <p>This Privacy Policy explains how the <strong>FileLensPro</strong> mobile application handles your data. Your privacy and security are our top priorities.</p>
+        <p>This Privacy Policy explains how the <strong>FileLensPro</strong> mobile application handles your data. Your privacy and data security are our top priorities.</p>
 
         <div class="highlight">
             <h2>The Short Version</h2>
-            <p><strong>FileLensPro operates entirely offline.</strong> We do not collect, transmit, store, or share your personal data, scanned documents, or files on any external servers. Everything happens 100% locally on your device.</p>
+            <p><strong>The core features of FileLensPro operate entirely offline.</strong> We do not secretly collect, transmit, store, or share your personal data, scanned documents, or files on any of our own external servers. File scanning, OCR, and search indexing happen 100% locally on your device.</p>
         </div>
 
         <h2>Permissions We Request</h2>
         <p>To provide its core functionality, FileLensPro requires the following device permissions:</p>
         <ul>
             <li><strong>Camera:</strong> Required to take pictures of documents, receipts, and cards so that text can be extracted (OCR) and saved locally.</li>
-            <li><strong>Storage (Photos & Media):</strong> Required to import existing photos for text extraction, save your scanned documents, and maintain the local SQLite database that powers the high-speed search feature.</li>
+            <li><strong>Storage (Photos, Media, & Files):</strong> Required to index your files for high-speed local searching, and to import existing photos for text extraction. All file indexing data is kept strictly inside a local database on your device.</li>
         </ul>
 
-        <h2>How Your Data is Handled</h2>
-        <p>When you scan a document or allow FileLensPro to index your files, the text extraction (OCR) and indexing processes are performed by the processor on your phone.</p>
+        <h2>How Your Data is Handled (Core Features)</h2>
+        <p>When you scan a document or allow FileLensPro to index your files, the text extraction and indexing processes are performed by the processor on your phone.</p>
         <ul>
-            <li><strong>No Cloud Uploads:</strong> Your documents are never uploaded to a cloud server for processing.</li>
-            <li><strong>No Tracking:</strong> We do not use third-party analytics trackers to monitor your behavior.</li>
-            <li><strong>Total Control:</strong> All indexed data is stored in a secure database inside the app's local sandbox. If you uninstall the app, all indexed data and tags are permanently deleted from your device.</li>
+            <li><strong>No Cloud Uploads:</strong> Your documents and file structures are never uploaded to our servers.</li>
+            <li><strong>No Tracking:</strong> We do not use behavior-tracking analytics to monitor how you use the app.</li>
         </ul>
 
-        <h2>Optional AI Features</h2>
-        <p>If you choose to use optional generative AI features (like multimodal AI document summaries), those specific features may require sending the text or image you explicitly select to the AI provider (e.g., Google Gemini) for processing. You will always be prompted to accept the AI terms and conditions before this happens, and it is strictly opt-in.</p>
+        <h2>Third-Party Services & Optional Cloud Features</h2>
+        <p>While our core features are offline, the app integrates with specific third-party services to provide optional features and app maintenance. These services may collect or process data in accordance with their own privacy policies:</p>
+        <ul>
+            <li><strong>Optional AI Features (Google Gemini):</strong> If you choose to use optional generative AI features (such as multimodal document summaries), the text or image you explicitly select will be sent securely to Google's Gemini API for processing. This is strictly opt-in.</li>
+            <li><strong>Over-The-Air (OTA) Updates (Expo):</strong> To deliver urgent bug fixes without requiring a full Play Store update, the app periodically checks Expo's servers. This process securely transmits basic device telemetry (like OS version, device model, and IP address) to serve the correct update.</li>
+        </ul>
+
+        <h2>Data Retention and Deletion</h2>
+        <p>Because FileLensPro stores your search index, tags, and OCR data locally, <strong>you have complete control over your data</strong>. To permanently delete all data collected and generated by FileLensPro, you simply need to <strong>uninstall the application</strong> or clear the app's data from your Android device settings. Once uninstalled, the local database is immediately and permanently destroyed.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we can take necessary actions.</p>
 
         <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Since we do not collect your email address, we cannot notify you directly of changes. We encourage you to review this page periodically.</p>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our features or Google Play policies. Since we do not collect your email address, we cannot notify you directly of changes. We encourage you to review this page periodically.</p>
 
         <h2>Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact the developer via the support channels listed on our Google Play Store page.</p>
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: <a href="mailto:filelenspro@gmail.com"><strong>filelenspro@gmail.com</strong></a></p>
     </div>
 </body>
 </html>
