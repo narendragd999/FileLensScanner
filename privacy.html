@@ -1,92 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - FileLensPro App</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        h1, h2 {
-            color: #1a1a1a;
-            margin-top: 30px;
-        }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        .highlight {
-            background-color: #e6f7ff;
-            border-left: 4px solid #1890ff;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        ul {
-            margin-top: 5px;
-        }
-        a {
-            color: #1890ff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - FileLensPro</title>
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --primary-light: #EEF2FF;
+      --text: #1F2937;
+      --text-muted: #6B7280;
+      --bg: #F9FAFB;
+      --card-bg: #FFFFFF;
+      --border: #E5E7EB;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #6366F1;
+        --primary-light: #1E1B4B;
+        --text: #F3F4F6;
+        --text-muted: #9CA3AF;
+        --bg: #111827;
+        --card-bg: #1F2937;
+        --border: #374151;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 32px 16px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    ul {
+      margin-bottom: 20px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .highlight-box {
+      background-color: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 24px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> August 20, 2026</p>
 
-        <p>This Privacy Policy explains how the <strong>FileLensPro</strong> mobile application handles your data. Your privacy and data security are our top priorities.</p>
+  <div class="container">
+    <header>
+      <div class="badge">Official Privacy Policy</div>
+      <h1>Privacy Policy for FileLensPro</h1>
+      <div class="meta">
+        <strong>App:</strong> FileLensPro (com.filelenspro.app) &bull; 
+        <strong>Effective Date:</strong> August 20, 2026 &bull; 
+        <strong>Last Updated:</strong> August 26, 2026
+      </div>
+    </header>
 
-        <div class="highlight">
-            <h2>The Short Version</h2>
-            <p><strong>The core features of FileLensPro operate entirely offline.</strong> We do not secretly collect, transmit, store, or share your personal data, scanned documents, or files on any of our own external servers. File scanning, OCR, and search indexing happen 100% locally on your device.</p>
-        </div>
-
-        <h2>Permissions We Request</h2>
-        <p>To provide its core functionality, FileLensPro requires the following device permissions:</p>
-        <ul>
-            <li><strong>Camera:</strong> Required to take pictures of documents, receipts, and cards so that text can be extracted (OCR) and saved locally.</li>
-            <li><strong>Storage (Photos, Media, & Files):</strong> Required to index your files for high-speed local searching, and to import existing photos for text extraction. All file indexing data is kept strictly inside a local database on your device.</li>
-        </ul>
-
-        <h2>How Your Data is Handled (Core Features)</h2>
-        <p>When you scan a document or allow FileLensPro to index your files, the text extraction and indexing processes are performed by the processor on your phone.</p>
-        <ul>
-            <li><strong>No Cloud Uploads:</strong> Your documents and file structures are never uploaded to our servers.</li>
-            <li><strong>No Tracking:</strong> We do not use behavior-tracking analytics to monitor how you use the app.</li>
-        </ul>
-
-        <h2>Third-Party Services & Optional Cloud Features</h2>
-        <p>While our core features are offline, the app integrates with specific third-party services to provide optional features and app maintenance. These services may collect or process data in accordance with their own privacy policies:</p>
-        <ul>
-            <li><strong>Optional AI Features (Google Gemini):</strong> If you choose to use optional generative AI features (such as multimodal document summaries), the text or image you explicitly select will be sent securely to Google's Gemini API for processing. This is strictly opt-in.</li>
-            <li><strong>Over-The-Air (OTA) Updates (Expo):</strong> To deliver urgent bug fixes without requiring a full Play Store update, the app periodically checks Expo's servers. This process securely transmits basic device telemetry (like OS version, device model, and IP address) to serve the correct update.</li>
-        </ul>
-
-        <h2>Data Retention and Deletion</h2>
-        <p>Because FileLensPro stores your search index, tags, and OCR data locally, <strong>you have complete control over your data</strong>. To permanently delete all data collected and generated by FileLensPro, you simply need to <strong>uninstall the application</strong> or clear the app's data from your Android device settings. Once uninstalled, the local database is immediately and permanently destroyed.</p>
-
-        <h2>Children's Privacy</h2>
-        <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we can take necessary actions.</p>
-
-        <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time to reflect changes in our features or Google Play policies. Since we do not collect your email address, we cannot notify you directly of changes. We encourage you to review this page periodically.</p>
-
-        <h2>Contact Us</h2>
-        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: <a href="mailto:filelenspro@gmail.com"><strong>filelenspro@gmail.com</strong></a></p>
+    <div class="highlight-box">
+      <p>🛡️ <strong>The Short Version:</strong> FileLensPro is an offline-first, on-device document search and indexing tool. We do not collect, transmit, store, sell, or share your personal documents, photos, or search queries on external servers. All text extraction (OCR), indexing, and searching operate 100% locally on your device.</p>
     </div>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains how <strong>FileLensPro</strong> ("we", "our", or "app") processes and protects your data. Your privacy and digital security are our foundational principles. We believe that your private documents, receipts, business cards, and photos belong solely to you.</p>
+
+    <h2>2. Permissions We Request & Purpose</h2>
+    <p>To provide core offline search, document viewing, and OCR functionality, FileLensPro requests the following system permissions:</p>
+    <ul>
+      <li>
+        <strong>All Files Access & Storage (<code>MANAGE_EXTERNAL_STORAGE</code> / Media Permissions):</strong>
+        <br>
+        <em>Purpose:</em> Required for the app's core <strong>Document Management and Local Search</strong> functionality. This allows the app to index files (PDFs, Word documents, Excel sheets, text files, and images) across selected device folders or storage so you can instantly find content offline. All indexed metadata and OCR text are stored exclusively in a private SQLite database on your physical device.
+      </li>
+      <li>
+        <strong>Camera (<code>android.permission.CAMERA</code>):</strong>
+        <br>
+        <em>Purpose:</em> Used strictly when you take a photo of a document, card, or receipt directly within the app for on-device OCR text extraction. Camera feeds are never recorded or transmitted remotely.
+      </li>
+      <li>
+        <strong>Media & Photos (<code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>):</strong>
+        <br>
+        <em>Purpose:</em> Used to discover photo albums and images selected by the user for on-device OCR scanning.
+      </li>
+    </ul>
+
+    <h2>3. How Your Data is Handled (Core Features)</h2>
+    <ul>
+      <li><strong>100% On-Device Processing:</strong> OCR (Optical Character Recognition) for English and Devanagari (Hindi) is powered by bundled Google ML Kit models that run directly on your phone's processor.</li>
+      <li><strong>Local Search Engine:</strong> Search indices, vector embeddings, bookmarks, and categorized tags are saved locally in your device's private app storage sandbox.</li>
+      <li><strong>No Server Uploads:</strong> Your files, scanned documents, search queries, and index databases are never uploaded to our servers.</li>
+      <li><strong>No User Tracking:</strong> We do not track user behavior, location, personal identity, or search history.</li>
+    </ul>
+
+    <h2>4. Third-Party Services & Optional Cloud Features</h2>
+    <p>While FileLensPro is completely functional offline, the app integrates with specific standard third-party services for optional features and software maintenance:</p>
+    <ul>
+      <li>
+        <strong>Optional AI Features (Google Gemini API):</strong>
+        <br>
+        If you explicitly choose to use optional generative AI features (e.g., generating structured document summaries), the specific text or snippet you manually select is securely transmitted to Google's Gemini API over encrypted HTTPS. This feature is strictly opt-in and requires your explicit action.
+      </li>
+      <li>
+        <strong>App Maintenance & OTA Updates (Expo):</strong>
+        <br>
+        To deliver security patches and bug fixes without requiring a full store re-download, the app securely checks Expo update endpoints. This transmits standard device telemetry (operating system version, device model, and IP address) solely to deliver the appropriate update package.
+      </li>
+    </ul>
+
+    <h2>5. Data Retention, Security & Deletion</h2>
+    <p>Because all data generated by FileLensPro resides locally on your device, you have complete and permanent control over it:</p>
+    <ul>
+      <li><strong>In-App Controls:</strong> You can delete individual bookmarks, saved searches, custom cards, or clear the entire index directly from the app's settings at any time.</li>
+      <li><strong>Permanent Deletion:</strong> Uninstalling the FileLensPro application or selecting "Clear Data" in your Android Settings immediately and permanently destroys all local databases, cached indices, and extracted OCR text from your device.</li>
+    </ul>
+
+    <h2>6. Children's Privacy (COPPA)</h2>
+    <p>FileLensPro does not knowingly collect, request, or store personally identifiable information from children under the age of 13. The app is a general-purpose offline utility for document indexing and local file search.</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to comply with relevant laws or Google Play Developer Program Policies. The updated version will be indicated by the "Last Updated" date at the top of this page.</p>
+
+    <h2>8. Contact Information</h2>
+    <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or your data privacy, please contact us at:</p>
+    <p>
+      📧 <strong>Email:</strong> <a href="mailto:filelenspro@gmail.com">filelenspro@gmail.com</a>
+    </p>
+
+    <footer>
+      &copy; 2026 FileLensPro. All rights reserved.
+    </footer>
+  </div>
+
 </body>
 </html>
